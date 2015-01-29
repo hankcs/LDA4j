@@ -27,8 +27,6 @@ package com.hankcs.lda;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
-import java.util.Collection;
-import java.util.Map;
 
 /**
  * Gibbs sampler for estimating the best assignments of topics for words and
@@ -286,7 +284,7 @@ public class LdaGibbsSampler
      * Sample a topic z_i from the full conditional distribution: p(z_i = j |
      * z_-i, w) = (n_-i,j(w_i) + beta)/(n_-i,j(.) + W * beta) * (n_-i,j(d_i) +
      * alpha)/(n_-i,.(d_i) + K * alpha) <br>
-     * 根据上述公式计算文档m中第n个词语的主题
+     * 根据上述公式计算文档m中第n个词语的主题的完全条件分布，输出最可能的主题
      *
      * @param m document
      * @param n word
