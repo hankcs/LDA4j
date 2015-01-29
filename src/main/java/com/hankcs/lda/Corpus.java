@@ -66,6 +66,12 @@ public class Corpus
         return sb.toString();
     }
 
+    /**
+     * Load documents from disk
+     * @param folderPath is a folder, which contains text documents.
+     * @return a corpus
+     * @throws IOException
+     */
     public static Corpus load(String folderPath) throws IOException
     {
         Corpus corpus = new Corpus();
