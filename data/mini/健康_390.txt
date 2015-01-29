@@ -1,0 +1,121 @@
+
+
+
+
+ 烫发 调查 
+
+1 年龄 
+
+20 
+50 
+
+
+
+2 性别 
+
+ 
+
+
+
+3 年中会 
+
+1 
+
+5 
+
+
+
+4 选择 美发店 染发 商场 购买 染发 产品 亲自 打理 
+
+ 美发店 动手 
+
+
+
+5 动手 染发 做到 以下 哪点 可多 
+
+ 上色 均匀 头皮 面部 
+
+ 上色 不易 褪色 
+
+
+
+6 选择 染发 产品 比较 看中 产品 可多 
+
+ 品牌 颜色 护发 指数 
+
+ 健康 指数 
+
+
+
+7 染发 致癌 说法 
+
+ 重视 无所谓 知道 
+
+
+
+8 染发 产品 头发 滞留 时间 选择 
+
+ 
+
+15 
+
+
+
+9 美发店 染发 要求 索看 染发剂 合格证 
+
+ 要求 
+
+ 知道 证明 
+
+
+
+
+10 染发 时间 根部 滋长 打理 
+
+ 再次 染发 顺其自然 
+
+
+
+11 知道 染发剂 成分 头发 变颜色 
+
+ 知道 知道 
+
+
+
+12 知道 染发剂 头发 颜色 成分 人体 健康 影响 
+
+ 知道 知道 
+
+
+
+13 染发 动机 可多 
+
+ 漂亮 提升 人际 印象分 
+
+ 生活 新的 改变 
+
+ 染发 
+
+ 不好 遮盖 效果 
+
+ 染发 几乎 一种 自动化 需要 觉得 别扭 
+
+ 终于 事情 决定 控制 
+
+
+
+14 以后 停止 染发 
+
+ 感觉 焦虑 染发 色会 均匀 影响 美观 
+
+ 感觉 难受 戒掉 染发 太难 
+
+ 无所谓 那就让 头发 慢慢 
+
+ 感觉 有点 遗憾 黑发 总会 显得 单调 
+
+ 相当 接受 头发 终于 回复 自然 营养 
+
+ 
+var NewWin null function WinOpen url NewWin || NewWin closed NewWin LoadWin url 'win_poll' NewWin focus function LoadWin url width height var str 'scrollbars resizable location height height innerHeight height width width innerWidth width window screen var ah screen availHeight-30 var aw screen availWidth-10 var xc aw-width /2 var yc ah-height /2 str left xc screenX xc str yc screenY yc return window open url str
+ 
