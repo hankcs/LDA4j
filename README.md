@@ -1,7 +1,7 @@
 LDA4j
 ========
 
-A Java implemention of LDA
+A Java implemention of LDA(Latent Dirichlet Allocation). Inference topics from a set of documents with few lines of Java code.
 
 How To Use
 --
