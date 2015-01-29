@@ -494,8 +494,6 @@ public class LdaGibbsSampler
     {
         int K = phi.length;
         int V = phi[0].length;
-        double[] thetasum = new double[K];
-        double[][] phisum = new double[K][V];
         // init
 
         // initialise count variables. 初始化计数器
@@ -573,7 +571,10 @@ public class LdaGibbsSampler
         }
         return theta;
     }
-
+    public static double[] inference(double[][] phi, int[] doc)
+    {
+        return inference(2.0, 0.5, phi, doc);
+    }
     /**
      * Driver with example data.<br>
      * 测试入口

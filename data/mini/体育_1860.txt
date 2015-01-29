@@ -1,26 +1,3 @@
-
-
- 自动 滚动 
-var theFloaters new floaters
-
-theFloaters play
-
-
-var formlist ''
-formlist formlist ''
-formlist formlist 自动 滚动 '
-theFloaters addItem 'formdiv2' 'document body clientWidth-106' formlist
-
-theFloaters play
-
-TimeScrollCentAll
-
-SetCookie sports007MenRight 
-
-SetCookie sports007MenLeft 
-
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime 休息
-
  搜狐 直播员 朋友 搜狐 体育 直播 NBA 常规赛 国王队 迎战 比赛 欢迎 收看 
  搜狐 直播员 比赛 面对 西区 老大 国王队 不错 目前 2-3 落后 马刺队 
  搜狐 直播员 国王队 主场 拿下 比赛 比分 3-3 进行 最后 决战 
@@ -33,12 +10,10 @@ SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007cent
  搜狐 直播员 霍利 远投 投中 
  搜狐 直播员 国王队 进攻 阿泰斯特 投中 
  搜狐 直播员 帕克 篮板球 反击 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
  
  搜狐 直播员 帕克 跳投 率先 得分 
  搜狐 直播员 托马斯 失误 帕克 反击 
  搜狐 直播员 托马斯 邓肯 手里 反击 勃文 犯规 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
  
  搜狐 直播员 维尔士 罚球 罚球 
  搜狐 直播员 维尔士 罚球 一中 
@@ -46,24 +21,19 @@ SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007cent
  搜狐 直播员 托马斯 前场 篮板球 毕比 跳投 吉诺比利 篮板球 
  搜狐 直播员 帕克 上篮 米勒 篮板 反击 
  搜狐 直播员 阿泰斯特 跳投 篮板球 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
  
  搜狐 直播员 阿泰斯特 传球 托马斯 篮球 
  搜狐 直播员 吉诺比利 跳投 霍利 篮板球 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
  
  搜狐 直播员 邓肯 霍利 传球 上篮 得分 
  搜狐 直播员 造成了 维尔士 犯规 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
  
  搜狐 直播员 邓肯加 罚球 
  搜狐 直播员 帕克 跳投 
  搜狐 直播员 国王队 进攻 米勒 跳投 
  搜狐 直播员 毕比 跳投 邓肯 篮板球 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
  
  搜狐 直播员 勃文 吉诺比利 传球 三分 远投 命中 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
  
  搜狐 直播员 米勒 助攻 托马斯 篮球 
  搜狐 直播员 造成了 吉诺比利 犯规 
@@ -75,13 +45,13 @@ SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007cent
  搜狐 直播员 霍利 传球 失误 
  搜狐 直播员 内斯特洛维奇 邓肯 
  搜狐 直播员 维尔士 失误 勃文 反击 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 帕克 接到 吉诺比利 传球 上篮 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 维尔士 跳投 命中 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 勃文 传球 霍利 跳投 
  搜狐 直播员 阿泰斯特 跳投 投中 
@@ -90,7 +60,7 @@ SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007cent
  搜狐 直播员 暂停 时间 比赛 继续 进行 
  搜狐 直播员 芬利 吉诺比利 
  搜狐 直播员 芬利 跳投 托马斯 篮板球 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 毕比 跳投 
  搜狐 直播员 霍利 跳投 维尔士 篮板球 
@@ -98,16 +68,16 @@ SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007cent
  搜狐 直播员 帕克 失误 毕比 抢断 反击 
  搜狐 直播员 米勒 投中 
  搜狐 直播员 帕克 篮板球 反击 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 帕克 跳投 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 米勒 篮球 
  搜狐 直播员 造成了 内斯特洛维奇 犯规 
  搜狐 直播员 邓肯 霍利 
  搜狐 直播员 马丁换 托马斯 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 米勒加 罚球 
  搜狐 直播员 米勒 防守 犯规 
@@ -116,24 +86,24 @@ SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007cent
  搜狐 直播员 比赛 
  搜狐 直播员 贾奇 阿泰斯特 
  搜狐 直播员 吉诺比利 内斯特洛维奇 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 芬利 帕克 传球 跳投 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 贾奇 远投 命中 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 邓肯 接到 吉诺比利 传球 篮球 
  搜狐 直播员 马丁 跳投 帕克 篮板球 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 帕克 突破 篮球 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 毕比 阿卜杜拉-拉希姆 传球 跳投 
  搜狐 直播员 马刺队 投篮 维尔士 篮板球 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 马丁接 维尔士 传球 跳投 得分 
  搜狐 直播员 邓肯 进攻 犯规 
@@ -143,24 +113,24 @@ SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007cent
  搜狐 直播员 阿卜杜拉-拉希姆 进攻 犯规 
  搜狐 直播员 阿泰斯特 维尔士 
  搜狐 直播员 贾奇 防守 犯规 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 范埃克塞尔 罚球 
  搜狐 直播员 阿泰斯特 跳投 投中 
  搜狐 直播员 比赛 结束 马刺队 22-20 领先 国王队 
-SetCookie sports007MenLeft 
+ sports007MenLeft 
 
-SetCookie sports007MenRight 
+ sports007MenRight 
  
  搜狐 直播员 比赛 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 哈特 突破 篮球 
  搜狐 直播员 范埃克塞尔 失误 贾奇 反击 
  搜狐 直播员 国王队 暂停 
  搜狐 直播员 比赛 进行 时间 
  搜狐 直播员 暂停 时间 比赛 继续 进行 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 阿卜杜拉-拉希姆 篮球 
  搜狐 直播员 范埃克塞尔 跳投 
@@ -177,26 +147,26 @@ SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007cent
  搜狐 直播员 维尔士 贾奇 
  搜狐 直播员 勃文 吉诺比利 
  搜狐 直播员 毕比 哈特 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 巴里 罚球 罚球 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 巴里 
  搜狐 直播员 邓肯 防守 犯规 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 维尔士 罚球 
  搜狐 直播员 邓肯 跳投 阿卜杜拉-拉希姆 篮板球 
  搜狐 直播员 毕比 跳投 邓肯 篮板球 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 邓肯 篮球 
  搜狐 直播员 毕比 篮球 
  搜狐 直播员 阿卜杜拉-拉希姆 防守 犯规 
  搜狐 直播员 邓肯 罚球 
  搜狐 直播员 马丁 篮板球 反击 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 阿泰斯特 毕比 远投 命中 
  搜狐 直播员 马刺队 暂停 
@@ -205,39 +175,39 @@ SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007cent
  搜狐 直播员 内斯特洛维奇 邓肯 
  搜狐 直播员 帕克 芬利 
  搜狐 直播员 霍利 范埃克塞尔 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 帕克 突破 篮球 
  搜狐 直播员 造成了 毕比 犯规 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 帕克加 罚球 
  搜狐 直播员 马丁 上篮 勃文 篮板球 
  搜狐 直播员 内斯特洛维奇 跳投 汪中 维尔士 篮板球 反击 
  搜狐 直播员 霍利 防守 犯规 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 阿卜杜拉-拉希姆 罚球 一中 内斯特洛维奇 篮板球 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 巴里 跳投 
  搜狐 直播员 维尔士 上篮 阿卜杜拉-拉希姆 篮板球 
  搜狐 直播员 阿卜杜拉-拉希姆 进攻 犯规 
  搜狐 直播员 帕克 跳投 阿泰斯特 篮板球 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 阿泰斯特 跳投 
  搜狐 直播员 勃文 跳投 
  搜狐 直播员 霍利 篮板 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 霍利 传球 勃文 远投 命中 
  搜狐 直播员 毕比 跳投 霍利 篮板 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 帕克 篮球 
  搜狐 直播员 勃文 防守 犯规 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 维尔士 罚球 一中 
  搜狐 直播员 吉诺比利 篮板球 反击 
@@ -247,32 +217,32 @@ SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007cent
  搜狐 直播员 比赛 进入 官方 暂停 时间 
  搜狐 直播员 比赛 
  搜狐 直播员 暂停 时间 比赛 继续 进行 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 邓肯 罚球 
  搜狐 直播员 米勒 上篮 邓肯 篮板 
  搜狐 直播员 霍利 跳投 毕比 篮板 
  搜狐 直播员 米勒 跳投 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 维尔士 篮板 篮球 
  搜狐 直播员 邓肯 跳投 毕比 篮板球 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 维尔士 失误 邓肯 篮球 
  搜狐 直播员 霍利 防守 犯规 托马斯 罚球 一中 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 霍利 篮球 
  搜狐 直播员 造成了 米勒 犯规 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 霍利加 罚球 
  搜狐 直播员 米勒 传球 出现 失误 
  搜狐 直播员 马刺队 暂停 
  搜狐 直播员 
  搜狐 直播员 暂停 时间 比赛 继续 进行 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 吉诺比利 霍利 传球 跳投 
  搜狐 直播员 维尔士 超远 距离 投篮 
@@ -281,9 +251,9 @@ SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007cent
  搜狐 直播员 帕克 
  搜狐 直播员 毕比 得到 国王队 得分 最多 
  搜狐 直播员 休息 四节 比赛 
-SetCookie sports007MenLeft 
+ sports007MenLeft 
 
-SetCookie sports007MenRight 
+ sports007MenRight 
  
  搜狐 直播员 比赛 
  搜狐 直播员 帕克 防守 犯规 
@@ -291,18 +261,18 @@ SetCookie sports007MenRight
  搜狐 直播员 吉诺比利 篮板 
  搜狐 直播员 帕克 跳投 米勒 篮板 
  搜狐 直播员 米勒 进攻 违例 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 吉诺比利得 跳投 命中 
  搜狐 直播员 米勒 跳投 邓肯 篮板球 
  搜狐 直播员 吉诺比利 米勒 篮板 反击 
  搜狐 直播员 吉诺比利 犯规 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 阿泰斯特 罚球 一中 
  搜狐 直播员 勃文 吉诺比利 传球 远投 命中 
  搜狐 直播员 阿泰斯特 进攻 犯规 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 马刺队 进攻 勃文 帕克 传球 三分 远投 命中 
  搜狐 直播员 马刺队 打出 9-1 高潮 
@@ -314,19 +284,19 @@ SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007cent
  搜狐 直播员 霍利 跳投 
  搜狐 直播员 托马斯 进攻 犯规 
  搜狐 直播员 米勒 防守 犯规 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 吉诺比利 罚球 得到 一分 
  搜狐 直播员 吉诺比利 上篮 不中 
  搜狐 直播员 阿卜杜拉-拉希姆 托马斯 
  搜狐 直播员 马丁换 米勒 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 邓肯 接到 吉诺比利 传球 篮球 
  搜狐 直播员 维尔士 进攻 违例 
  搜狐 直播员 国王队 短暂 
  搜狐 直播员 暂停 时间 比赛 继续 进行 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 吉诺比利 突破 篮球 
  搜狐 直播员 毕比 失误 邓肯 反击 
@@ -335,13 +305,13 @@ SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007cent
  搜狐 直播员 帕克 防守 犯规 
  搜狐 直播员 巴里 霍利 
  搜狐 直播员 巴里 吉诺比利 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 毕比 罚球 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 巴里 接到 吉诺比利 传球 远投 命中 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 维尔士 米勒 传球 三分 远投 命中 
  搜狐 直播员 毕比 犯规 
@@ -349,79 +319,79 @@ SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007cent
  搜狐 直播员 勃文 跳投 
  搜狐 直播员 阿卜杜拉-拉希姆 篮板 
  搜狐 直播员 巴里 犯规 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 芬利 犯规 毕比 罚球 
  搜狐 直播员 芬利 
  搜狐 直播员 阿泰斯特 跳投 勃文 篮板球 
  搜狐 直播员 阿泰斯特 犯规 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 帕克 罚球 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 毕比 阿卜杜拉-拉希姆 传球 跳投 
  搜狐 直播员 帕克 上篮 贾奇 篮板球 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 贾奇 传球 维尔士 篮球 
  搜狐 直播员 马刺队 暂停 
  搜狐 直播员 比赛 
  搜狐 直播员 暂停 时间 比赛 继续 进行 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 芬利 跳投 
  搜狐 直播员 维尔士 传球 出界 
  搜狐 直播员 芬利 跳投 
  搜狐 直播员 毕比 篮板球 反击 
  搜狐 直播员 毕比 上篮 不中 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 阿卜杜拉-拉希姆 篮球 
  搜狐 直播员 贾奇 防守 犯规 
  搜狐 直播员 吉诺比利 巴里 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 帕克 罚球 一中 
  搜狐 直播员 维尔士 篮板球 反击 
  搜狐 直播员 阿泰斯特 维尔士 
  搜狐 直播员 内斯特洛维奇 邓肯 
  搜狐 直播员 阿卜杜拉-拉希姆 走步 违例 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 帕克 突破 篮球 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 毕比 突破 上篮 回敬 
  搜狐 直播员 毕比 犯规 
  搜狐 直播员 霍利 芬利 
  搜狐 直播员 维尔士 贾奇 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 帕克 罚球 
  搜狐 直播员 吉诺比利 防守 犯规 
  搜狐 直播员 阿卜杜拉-拉希姆 罚球 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 罚球 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 帕克 篮球 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 马丁接 毕比 传球 篮球 
  搜狐 直播员 马丁 犯规 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 帕克 罚球 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 阿卜杜拉-拉希姆 跳投 维尔士 篮板 篮球 
  搜狐 直播员 帕克 跳投 维尔士 篮板球 反击 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 马丁三 远投 命中 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 帕克 远投 命中 
  搜狐 直播员 比赛 结束 马刺队 78-62 领先 国王队 
@@ -440,7 +410,7 @@ SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007cent
  搜狐 直播员 霍利 犯规 
  搜狐 直播员 芬利 勃文 
  搜狐 直播员 毕比 跳投 范埃克塞尔 篮板球 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 霍利 远投 命中 
  搜狐 直播员 维尔士 跳投 
@@ -451,45 +421,45 @@ SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007cent
  搜狐 直播员 芬利 跳投 
  搜狐 直播员 马丁 篮板球 反击 
  搜狐 直播员 范埃克塞尔 犯规 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 马丁 罚球 罚球 
  搜狐 直播员 
  搜狐 直播员 芬利 跳投 投中 
  搜狐 直播员 维尔士 篮板球 
  搜狐 直播员 阿泰斯特 进攻 犯规 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 芬利 跳投 命中 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 维尔士 篮球 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 芬利 邓肯 传球 篮球 
  搜狐 直播员 霍利 防守 犯规 
  搜狐 直播员 勃文 吉诺比利 
  搜狐 直播员 巴里 邓肯 
  搜狐 直播员 内斯特洛维奇 霍利 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 阿泰斯特 罚球 罚球 
  搜狐 直播员 
  搜狐 直播员 内斯特洛维奇 上篮 阿泰斯特 篮板球 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 阿泰斯特 上篮 阿卜杜拉-拉希姆 篮球 
  搜狐 直播员 马刺队 进攻 违例 
  搜狐 直播员 米勒 阿卜杜拉-拉希姆 
  搜狐 直播员 马丁三 范埃克塞尔 篮板球 
  搜狐 直播员 内斯特洛维奇 失误 毕比 反击 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 毕比 传球 马丁上 篮球 
  搜狐 直播员 马刺队 暂停 
  搜狐 直播员 比赛 
  搜狐 直播员 暂停 时间 比赛 继续 进行 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 吉诺比利 上篮 得分 
  搜狐 直播员 造成了 维尔士 犯规 
@@ -497,25 +467,25 @@ SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007cent
  搜狐 直播员 阿卜杜拉-拉希姆 进攻 犯规 
  搜狐 直播员 吉诺比利 跳投 毕比 篮板球 
  搜狐 直播员 毕比 跳投 阿卜杜拉-拉希姆得 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 毕比 突破 篮球 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 帕克 跳投 
  搜狐 直播员 马丁 跳投 霍利 篮板球 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 邓肯 跳投 
  搜狐 直播员 霍利 防守 犯规 
  搜狐 直播员 芬利 霍利 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 阿泰斯特 罚球 罚球 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 芬利 跳投 
  搜狐 直播员 芬利 犯规 
@@ -525,7 +495,7 @@ SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007cent
  搜狐 直播员 帕克 跳投 
  搜狐 直播员 阿卜杜拉-拉希姆 跳投 邓肯 篮板球 
  搜狐 直播员 帕克 上篮 上篮 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 勃文 篮板球 跳投 
  搜狐 直播员 国王队 暂停 
@@ -541,17 +511,17 @@ SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007cent
  搜狐 直播员 普林斯 上篮 莫罕默德 篮板球 
  搜狐 直播员 国王队 进攻 投篮不中 
  搜狐 直播员 莫罕默德 篮板球 反击 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 巴里 远投 命中 
  搜狐 直播员 哈特 上篮 莫罕默德 篮板球 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 波塔潘科 莫罕默德 手里 跳投 
  搜狐 直播员 奥博 跳投 莫罕默德 篮板球 
  搜狐 直播员 威廉姆斯 犯规 
  搜狐 直播员 莫罕默德 罚球 
-SetCookie sports007centLeft SetCookie sports007centRight SetCookie sports007centTime
+     
  
  搜狐 直播员 莫罕默德 罚球 
  搜狐 直播员 国王队 进攻 得分 

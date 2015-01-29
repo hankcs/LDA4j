@@ -19,6 +19,7 @@ import java.util.List;
 /**
  * a set of documents
  * 语料库，也就是文档集合
+ *
  * @author hankcs
  */
 public class Corpus
@@ -68,6 +69,7 @@ public class Corpus
 
     /**
      * Load documents from disk
+     *
      * @param folderPath is a folder, which contains text documents.
      * @return a corpus
      * @throws IOException
@@ -106,5 +108,31 @@ public class Corpus
     public int[][] getDocument()
     {
         return toArray();
+    }
+
+    public static int[] loadDocument(String path, Vocabulary vocabulary) throws IOException
+    {
+        BufferedReader br = new BufferedReader(new FileReader(path));
+        String line;
+        List<Integer> wordList = new LinkedList<Integer>();
+        while ((line = br.readLine()) != null)
+        {
+            String[] words = line.split(" ");
+            for (String word : words)
+            {
+                if (word.trim().length() < 2) continue;
+                Integer id = vocabulary.getId(word);
+                if (id != null)
+                    wordList.add(id);
+            }
+        }
+        br.close();
+        int[] result = new int[wordList.size()];
+        int i = 0;
+        for (Integer integer : wordList)
+        {
+            result[i++] = integer;
+        }
+        return result;
     }
 }

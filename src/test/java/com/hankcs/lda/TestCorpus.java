@@ -35,7 +35,7 @@ public class TestCorpus extends TestCase
         System.out.println(corpus);
     }
 
-    public void testLoad() throws Exception
+    public void testAll() throws Exception
     {
         // 1. Load corpus from disk
         Corpus corpus = Corpus.load("data/mini");
@@ -47,5 +47,10 @@ public class TestCorpus extends TestCase
         double[][] phi = ldaGibbsSampler.getPhi();
         Map<String, Double>[] topicMap = LdaUtil.translate(phi, corpus.getVocabulary(), 10);
         LdaUtil.explain(topicMap);
+        // 5. TODO:Predict. I'm not sure whether it works, it is not stable.
+        int[] document = Corpus.loadDocument("data/mini/军事_500.txt", corpus.getVocabulary());
+        double[] tp = LdaGibbsSampler.inference(phi, document);
+        Map<String, Double> topic = LdaUtil.translate(tp, phi, corpus.getVocabulary(), 10);
+        LdaUtil.explain(topic);
     }
 }

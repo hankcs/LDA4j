@@ -47,6 +47,22 @@ public class LdaUtil
         return result;
     }
 
+    public static Map<String, Double> translate(double[] tp, double[][] phi, Vocabulary vocabulary, int limit)
+    {
+        Map<String, Double>[] topicMapArray = translate(phi, vocabulary, limit);
+        double p = -1.0;
+        int t = -1;
+        for (int k = 0; k < tp.length; k++)
+        {
+            if (tp[k] > p)
+            {
+                p = tp[k];
+                t = k;
+            }
+        }
+        return topicMapArray[t];
+    }
+
     /**
      * To print the result in a well formatted form
      * @param result
@@ -57,11 +73,16 @@ public class LdaUtil
         for (Map<String, Double> topicMap : result)
         {
             System.out.printf("topic %d :\n", i++);
-            for (Map.Entry<String, Double> entry : topicMap.entrySet())
-            {
-                System.out.println(entry);
-            }
+            explain(topicMap);
             System.out.println();
+        }
+    }
+
+    public static void explain(Map<String, Double> topicMap)
+    {
+        for (Map.Entry<String, Double> entry : topicMap.entrySet())
+        {
+            System.out.println(entry);
         }
     }
 }

@@ -148,4 +148,4 @@ topic 9 :
  - corpus
  The data/mini is some documents included in this project, which use space to segment words. Feel free to replace it with yours.
  - algorithm
-  Mainly depend on the work of Gregor Heinrich's great work. Read more about this implementation on[《LDA入门与Java实现》](http://www.hankcs.com/nlp/lda-java-introduction-and-implementation.html)
+  Mainly depend on Gregor Heinrich's great work. Read more about this implementation on[《LDA入门与Java实现》](http://www.hankcs.com/nlp/lda-java-introduction-and-implementation.html)
