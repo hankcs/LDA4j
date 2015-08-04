@@ -80,7 +80,7 @@ public class Corpus
         File folder = new File(folderPath);
         for (File file : folder.listFiles())
         {
-            BufferedReader br = new BufferedReader(new FileReader(file));
+            BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(file), "UTF-8"));
             String line;
             List<String> wordList = new LinkedList<String>();
             while ((line = br.readLine()) != null)

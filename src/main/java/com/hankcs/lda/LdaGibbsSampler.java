@@ -538,7 +538,7 @@ public class LdaGibbsSampler
                 double[] p = new double[K];
                 for (int k = 0; k < K; k++)
                 {
-                    p[k] = (nw[doc[n]][k] + beta) / (nwsum[k] + V * beta)
+                    p[k] = phi[k][doc[n]]
                             * (nd[k] + alpha) / (ndsum + K * alpha);
                 }
                 // cumulate multinomial parameters  累加多项式分布的参数

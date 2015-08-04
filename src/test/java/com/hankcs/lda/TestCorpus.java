@@ -48,7 +48,7 @@ public class TestCorpus extends TestCase
         Map<String, Double>[] topicMap = LdaUtil.translate(phi, corpus.getVocabulary(), 10);
         LdaUtil.explain(topicMap);
         // 5. TODO:Predict. I'm not sure whether it works, it is not stable.
-        int[] document = Corpus.loadDocument("data/mini/军事_500.txt", corpus.getVocabulary());
+        int[] document = Corpus.loadDocument("data/mini/军事_510.txt", corpus.getVocabulary());
         double[] tp = LdaGibbsSampler.inference(phi, document);
         Map<String, Double> topic = LdaUtil.translate(tp, phi, corpus.getVocabulary(), 10);
         LdaUtil.explain(topic);
