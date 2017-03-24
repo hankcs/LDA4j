@@ -37,8 +37,7 @@ import java.text.NumberFormat;
  *
  * @author heinrich
  */
-public class LdaGibbsSampler
-{
+public class LdaGibbsSampler {
 
     /**
      * document data (term lists)<br>
@@ -151,8 +150,7 @@ public class LdaGibbsSampler
      * @param documents 文档
      * @param V         vocabulary size 词表大小
      */
-    public LdaGibbsSampler(int[][] documents, int V)
-    {
+    public LdaGibbsSampler(int[][] documents, int V) {
 
         this.documents = documents;
         this.V = V;
@@ -166,8 +164,7 @@ public class LdaGibbsSampler
      *
      * @param K number of topics K个主题
      */
-    public void initialState(int K)
-    {
+    public void initialState(int K) {
         int M = documents.length;
 
         // initialise count variables. 初始化计数器
@@ -180,12 +177,10 @@ public class LdaGibbsSampler
         // initial state of the Markov chain.
 
         z = new int[M][];   // z_i := 1到K之间的值，表示马氏链的初始状态
-        for (int m = 0; m < M; m++)
-        {
+        for (int m = 0; m < M; m++) {
             int N = documents[m].length;
             z[m] = new int[N];
-            for (int n = 0; n < N; n++)
-            {
+            for (int n = 0; n < N; n++) {
                 int topic = (int) (Math.random() * K);
                 z[m][n] = topic;
                 // number of instances of word i assigned to topic j
@@ -200,8 +195,7 @@ public class LdaGibbsSampler
         }
     }
 
-    public void gibbs(int K)
-    {
+    public void gibbs(int K) {
         gibbs(K, 2.0, 0.5);
     }
 
@@ -215,15 +209,13 @@ public class LdaGibbsSampler
      * @param alpha symmetric prior parameter on document--topic associations 对称文档——主题先验概率？
      * @param beta  symmetric prior parameter on topic--term associations 对称主题——词语先验概率？
      */
-    public void gibbs(int K, double alpha, double beta)
-    {
+    public void gibbs(int K, double alpha, double beta) {
         this.K = K;
         this.alpha = alpha;
         this.beta = beta;
 
         // init sampler statistics  分配内存
-        if (SAMPLE_LAG > 0)
-        {
+        if (SAMPLE_LAG > 0) {
             thetasum = new double[documents.length][K];
             phisum = new double[K][V];
             numstats = 0;
@@ -233,17 +225,14 @@ public class LdaGibbsSampler
         initialState(K);
 
         System.out.println("Sampling " + ITERATIONS
-                                   + " iterations with burn-in of " + BURN_IN + " (B/S="
-                                   + THIN_INTERVAL + ").");
+                + " iterations with burn-in of " + BURN_IN + " (B/S="
+                + THIN_INTERVAL + ").");
 
-        for (int i = 0; i < ITERATIONS; i++)
-        {
+        for (int i = 0; i < ITERATIONS; i++) {
 
             // for all z_i
-            for (int m = 0; m < z.length; m++)
-            {
-                for (int n = 0; n < z[m].length; n++)
-                {
+            for (int m = 0; m < z.length; m++) {
+                for (int n = 0; n < z[m].length; n++) {
 
                     // (z_i = z[m][n])
                     // sample from p(z_i|z_-i, w)
@@ -252,27 +241,23 @@ public class LdaGibbsSampler
                 }
             }
 
-            if ((i < BURN_IN) && (i % THIN_INTERVAL == 0))
-            {
+            if ((i < BURN_IN) && (i % THIN_INTERVAL == 0)) {
                 System.out.print("B");
                 dispcol++;
             }
             // display progress
-            if ((i > BURN_IN) && (i % THIN_INTERVAL == 0))
-            {
+            if ((i > BURN_IN) && (i % THIN_INTERVAL == 0)) {
                 System.out.print("S");
                 dispcol++;
             }
             // get statistics after burn-in
-            if ((i > BURN_IN) && (SAMPLE_LAG > 0) && (i % SAMPLE_LAG == 0))
-            {
+            if ((i > BURN_IN) && (SAMPLE_LAG > 0) && (i % SAMPLE_LAG == 0)) {
                 updateParams();
                 System.out.print("|");
                 if (i % THIN_INTERVAL != 0)
                     dispcol++;
             }
-            if (dispcol >= 100)
-            {
+            if (dispcol >= 100) {
                 System.out.println();
                 dispcol = 0;
             }
@@ -289,8 +274,7 @@ public class LdaGibbsSampler
      * @param m document
      * @param n word
      */
-    private int sampleFullConditional(int m, int n)
-    {
+    private int sampleFullConditional(int m, int n) {
 
         // remove z_i from the count variables  先将这个词从计数器中抹掉
         int topic = z[m][n];
@@ -301,20 +285,17 @@ public class LdaGibbsSampler
 
         // do multinomial sampling via cumulative method: 通过多项式方法采样多项式分布
         double[] p = new double[K];
-        for (int k = 0; k < K; k++)
-        {
+        for (int k = 0; k < K; k++) {
             p[k] = (nw[documents[m][n]][k] + beta) / (nwsum[k] + V * beta)
                     * (nd[m][k] + alpha) / (ndsum[m] + K * alpha);
         }
         // cumulate multinomial parameters  累加多项式分布的参数
-        for (int k = 1; k < p.length; k++)
-        {
+        for (int k = 1; k < p.length; k++) {
             p[k] += p[k - 1];
         }
         // scaled sample because of unnormalised p[] 正则化
         double u = Math.random() * p[K - 1];
-        for (topic = 0; topic < p.length; topic++)
-        {
+        for (topic = 0; topic < p.length; topic++) {
             if (u < p[topic])
                 break;
         }
@@ -332,19 +313,14 @@ public class LdaGibbsSampler
      * Add to the statistics the values of theta and phi for the current state.<br>
      * 更新参数
      */
-    private void updateParams()
-    {
-        for (int m = 0; m < documents.length; m++)
-        {
-            for (int k = 0; k < K; k++)
-            {
+    private void updateParams() {
+        for (int m = 0; m < documents.length; m++) {
+            for (int k = 0; k < K; k++) {
                 thetasum[m][k] += (nd[m][k] + alpha) / (ndsum[m] + K * alpha);
             }
         }
-        for (int k = 0; k < K; k++)
-        {
-            for (int w = 0; w < V; w++)
-            {
+        for (int k = 0; k < K; k++) {
+            for (int w = 0; w < V; w++) {
                 phisum[k][w] += (nw[w][k] + beta) / (nwsum[k] + V * beta);
             }
         }
@@ -358,27 +334,19 @@ public class LdaGibbsSampler
      *
      * @return theta multinomial mixture of document topics (M x K)
      */
-    public double[][] getTheta()
-    {
+    public double[][] getTheta() {
         double[][] theta = new double[documents.length][K];
 
-        if (SAMPLE_LAG > 0)
-        {
-            for (int m = 0; m < documents.length; m++)
-            {
-                for (int k = 0; k < K; k++)
-                {
+        if (SAMPLE_LAG > 0) {
+            for (int m = 0; m < documents.length; m++) {
+                for (int k = 0; k < K; k++) {
                     theta[m][k] = thetasum[m][k] / numstats;
                 }
             }
 
-        }
-        else
-        {
-            for (int m = 0; m < documents.length; m++)
-            {
-                for (int k = 0; k < K; k++)
-                {
+        } else {
+            for (int m = 0; m < documents.length; m++) {
+                for (int k = 0; k < K; k++) {
                     theta[m][k] = (nd[m][k] + alpha) / (ndsum[m] + K * alpha);
                 }
             }
@@ -394,25 +362,17 @@ public class LdaGibbsSampler
      *
      * @return phi multinomial mixture of topic words (K x V)
      */
-    public double[][] getPhi()
-    {
+    public double[][] getPhi() {
         double[][] phi = new double[K][V];
-        if (SAMPLE_LAG > 0)
-        {
-            for (int k = 0; k < K; k++)
-            {
-                for (int w = 0; w < V; w++)
-                {
+        if (SAMPLE_LAG > 0) {
+            for (int k = 0; k < K; k++) {
+                for (int w = 0; w < V; w++) {
                     phi[k][w] = phisum[k][w] / numstats;
                 }
             }
-        }
-        else
-        {
-            for (int k = 0; k < K; k++)
-            {
-                for (int w = 0; w < V; w++)
-                {
+        } else {
+            for (int k = 0; k < K; k++) {
+                for (int w = 0; w < V; w++) {
                     phi[k][w] = (nw[w][k] + beta) / (nwsum[k] + V * beta);
                 }
             }
@@ -427,35 +387,29 @@ public class LdaGibbsSampler
      * @param fmax max frequency in display
      * @return the scaled histogram bin values
      */
-    public static void hist(double[] data, int fmax)
-    {
+    public static void hist(double[] data, int fmax) {
 
         double[] hist = new double[data.length];
         // scale maximum
         double hmax = 0;
-        for (int i = 0; i < data.length; i++)
-        {
+        for (int i = 0; i < data.length; i++) {
             hmax = Math.max(data[i], hmax);
         }
         double shrink = fmax / hmax;
-        for (int i = 0; i < data.length; i++)
-        {
+        for (int i = 0; i < data.length; i++) {
             hist[i] = shrink * data[i];
         }
 
         NumberFormat nf = new DecimalFormat("00");
         String scale = "";
-        for (int i = 1; i < fmax / 10 + 1; i++)
-        {
+        for (int i = 1; i < fmax / 10 + 1; i++) {
             scale += "    .    " + i % 10;
         }
 
         System.out.println("x" + nf.format(hmax / fmax) + "\t0" + scale);
-        for (int i = 0; i < hist.length; i++)
-        {
+        for (int i = 0; i < hist.length; i++) {
             System.out.print(i + "\t|");
-            for (int j = 0; j < Math.round(hist[i]); j++)
-            {
+            for (int j = 0; j < Math.round(hist[i]); j++) {
                 if ((j + 1) % 10 == 0)
                     System.out.print("]");
                 else
@@ -475,8 +429,7 @@ public class LdaGibbsSampler
      * @param sampleLag    sample interval (-1 for just one sample at the end)
      */
     public void configure(int iterations, int burnIn, int thinInterval,
-                          int sampleLag)
-    {
+                          int sampleLag) {
         ITERATIONS = iterations;
         BURN_IN = burnIn;
         THIN_INTERVAL = thinInterval;
@@ -490,8 +443,7 @@ public class LdaGibbsSampler
      * @param doc document
      * @return a p array
      */
-    public static double[] inference(double alpha, double beta, double[][] phi, int[] doc)
-    {
+    public static double[] inference(double alpha, double beta, double[][] phi, int[] doc) {
         int K = phi.length;
         int V = phi[0].length;
         // init
@@ -507,8 +459,7 @@ public class LdaGibbsSampler
 
         int N = doc.length;
         int[] z = new int[N];   // z_i := 1到K之间的值，表示马氏链的初始状态
-        for (int n = 0; n < N; n++)
-        {
+        for (int n = 0; n < N; n++) {
             int topic = (int) (Math.random() * K);
             z[n] = topic;
             // number of instances of word i assigned to topic j
@@ -520,10 +471,8 @@ public class LdaGibbsSampler
         }
         // total number of words in document i
         ndsum = N;
-        for (int i = 0; i < ITERATIONS; i++)
-        {
-            for (int n = 0; n < z.length; n++)
-            {
+        for (int i = 0; i < ITERATIONS; i++) {
+            for (int n = 0; n < z.length; n++) {
 
                 // (z_i = z[m][n])
                 // sample from p(z_i|z_-i, w)
@@ -536,24 +485,23 @@ public class LdaGibbsSampler
 
                 // do multinomial sampling via cumulative method: 通过多项式方法采样多项式分布
                 double[] p = new double[K];
-                for (int k = 0; k < K; k++)
-                {
+                for (int k = 0; k < K; k++) {
                     p[k] = phi[k][doc[n]]
                             * (nd[k] + alpha) / (ndsum + K * alpha);
                 }
                 // cumulate multinomial parameters  累加多项式分布的参数
-                for (int k = 1; k < p.length; k++)
-                {
+                for (int k = 1; k < p.length; k++) {
                     p[k] += p[k - 1];
                 }
                 // scaled sample because of unnormalised p[] 正则化
                 double u = Math.random() * p[K - 1];
-                for (topic = 0; topic < p.length; topic++)
-                {
+                for (topic = 0; topic < p.length; topic++) {
                     if (u < p[topic])
                         break;
                 }
-
+                if (topic == K) {
+                    throw new RuntimeException("the param K or topic is set too small");
+                }
                 // add newly estimated z_i to count variables   将重新估计的该词语加入计数器
                 nw[doc[n]][topic]++;
                 nd[topic]++;
@@ -565,24 +513,23 @@ public class LdaGibbsSampler
 
         double[] theta = new double[K];
 
-        for (int k = 0; k < K; k++)
-        {
+        for (int k = 0; k < K; k++) {
             theta[k] = (nd[k] + alpha) / (ndsum + K * alpha);
         }
         return theta;
     }
-    public static double[] inference(double[][] phi, int[] doc)
-    {
+
+    public static double[] inference(double[][] phi, int[] doc) {
         return inference(2.0, 0.5, phi, doc);
     }
+
     /**
      * Driver with example data.<br>
      * 测试入口
      *
      * @param args
      */
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
 
         // words in documents
         int[][] documents = {
@@ -613,18 +560,15 @@ public class LdaGibbsSampler
         System.out.println();
         System.out.println();
         System.out.println("Document--Topic Associations, Theta[d][k] (alpha="
-                                   + alpha + ")");
+                + alpha + ")");
         System.out.print("d\\k\t");
-        for (int m = 0; m < theta[0].length; m++)
-        {
+        for (int m = 0; m < theta[0].length; m++) {
             System.out.print("   " + m % 10 + "    ");
         }
         System.out.println();
-        for (int m = 0; m < theta.length; m++)
-        {
+        for (int m = 0; m < theta.length; m++) {
             System.out.print(m + "\t");
-            for (int k = 0; k < theta[m].length; k++)
-            {
+            for (int k = 0; k < theta[m].length; k++) {
                 // System.out.print(theta[m][k] + " ");
                 System.out.print(shadeDouble(theta[m][k], 1) + " ");
             }
@@ -632,19 +576,16 @@ public class LdaGibbsSampler
         }
         System.out.println();
         System.out.println("Topic--Term Associations, Phi[k][w] (beta=" + beta
-                                   + ")");
+                + ")");
 
         System.out.print("k\\w\t");
-        for (int w = 0; w < phi[0].length; w++)
-        {
+        for (int w = 0; w < phi[0].length; w++) {
             System.out.print("   " + w % 10 + "    ");
         }
         System.out.println();
-        for (int k = 0; k < phi.length; k++)
-        {
+        for (int k = 0; k < phi.length; k++) {
             System.out.print(k + "\t");
-            for (int w = 0; w < phi[k].length; w++)
-            {
+            for (int w = 0; w < phi[k].length; w++) {
                 // System.out.print(phi[k][w] + " ");
                 System.out.print(shadeDouble(phi[k][w], 1) + " ");
             }
@@ -653,8 +594,7 @@ public class LdaGibbsSampler
         // Let's inference a new document
         int[] aNewDocument = {2, 2, 4, 2, 4, 2, 2, 2, 2, 4, 2, 2};
         double[] newTheta = inference(alpha, beta, phi, aNewDocument);
-        for (int k = 0; k < newTheta.length; k++)
-        {
+        for (int k = 0; k < newTheta.length; k++) {
             // System.out.print(theta[m][k] + " ");
             System.out.print(shadeDouble(newTheta[k], 1) + " ");
         }
@@ -674,15 +614,12 @@ public class LdaGibbsSampler
      * @param max maximum value
      * @return
      */
-    public static String shadeDouble(double d, double max)
-    {
+    public static String shadeDouble(double d, double max) {
         int a = (int) Math.floor(d * 10 / max + 0.5);
-        if (a > 10 || a < 0)
-        {
+        if (a > 10 || a < 0) {
             String x = lnf.format(d);
             a = 5 - x.length();
-            for (int i = 0; i < a; i++)
-            {
+            for (int i = 0; i < a; i++) {
                 x += " ";
             }
             return "<" + x + ">";
